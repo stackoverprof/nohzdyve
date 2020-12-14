@@ -1,0 +1,52 @@
+<html lang="en">
+<head>
+    <title>NOHZDYVE by errbint</title>
+    <link rel="shortcut icon" href="assets/icon.svg" type="image/x-icon">
+</head>
+<body>
+    <div class="container">
+        <canvas id="canvas"></canvas>
+        <div class="macintosh">
+        </div>
+    </div>
+    
+    <script src="game/imageHandler.js"></script>
+    <script src="game/control.js"></script>
+    <script src="game/responsive.js"></script>
+    
+    <script src="game/main.js"></script>
+    
+    <style>
+        body{
+            background: #2F3857;
+            width: 100%;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            margin: 0;
+        }
+        .container{
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-width: 524px;
+            min-height: 933px;
+        }
+        .macintosh{
+            position: absolute;
+            width: 524px;
+            height: 933px;
+            background: url('assets/img/macintosh.png');
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+        }
+        canvas{
+            position: absolute;
+            background: #000;
+        }
+
+    </style>
+</body>
+</html>
