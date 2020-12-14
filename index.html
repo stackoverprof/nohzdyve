@@ -5,14 +5,13 @@
 </head>
 <body>
     <div class="container">
+        <div class="macintosh"></div>
         <canvas id="canvas"></canvas>
-        <div class="macintosh">
-        </div>
     </div>
     
     <script src="game/imageHandler.js"></script>
     <script src="game/control.js"></script>
-    <script src="game/responsive.js"></script>
+    <script src="game/constructor/Player.js"></script>
     
     <script src="game/main.js"></script>
     
@@ -28,8 +27,9 @@
         .container{
             margin: 0 auto;
             display: flex;
-            justify-content: center;
+            justify-content: flex-start;
             align-items: center;
+            flex-direction: column;
             min-width: 524px;
             min-height: 933px;
         }
@@ -43,6 +43,7 @@
             background-position: center;
         }
         canvas{
+            margin-top: 108px;
             position: absolute;
             background: #000;
         }
